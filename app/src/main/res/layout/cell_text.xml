@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_top_bottom_one_line"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/edit_text_TenDp"
+        android:layout_marginRight="@dimen/edit_text_TenDp"
+        android:layout_marginTop="@dimen/edit_text_TenDp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/edit_text_TenDp"
+            android:layout_marginTop="@dimen/index_tenDp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/time_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/index_tenDp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxEms="10"
+                android:text="2017-06-22" />
+
+            <TextView
+                android:id="@+id/nike_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="@dimen/index_tenDp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxEms="5"
+                android:text="王三" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>
